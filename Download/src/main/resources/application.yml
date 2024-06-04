@@ -1,0 +1,7 @@
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+rapidapi:
+  apiUrl: https://youtube-mp3-downloader2.p.rapidapi.com/ytmp3/ytmp3/?url=
+  key: b7c12cb56amsh40a21830462c950p1b032bjsn1763d175ca78
+  host: youtube-mp3-downloader2.p.rapidapi.com

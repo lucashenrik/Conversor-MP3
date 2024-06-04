@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor URL</title>
+    <style>
+        body {
+            background: #181926;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 40px;
+
+            
+        }
+
+      #h1 {
+        padding: 10px;
+        margin: 0px;
+            font-size: 2.3em;
+            text-align: center;
+           color: #F5F5F5;
+        }
+
+        .container > #paragrafo-abaixo-do-titulo{
+            
+            font-size: 1.8em;
+            color: #F5F5F5;
+            text-align: center;
+        }
+
+
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+       
+        #videoUrl {
+
+            
+            width: 100%;
+          padding: 10px;
+            font-size: 16px;
+            border-radius: 4px 0px 0px 4px;
+            border: 1px solid #ccc;
+        }
+
+        #submit{ 
+
+            color: #DFE6EC;
+            font-size: 1.1em;
+        }
+
+       
+        
+        button {
+            font-size: 1.1em;
+            display: block;
+            width: 250px;
+            
+           
+        
+            background: linear-gradient(to left, #6F40C8 , #8244C4 );
+            color: #fff;
+            border: none;
+            border-radius: 0px 4px 4px 0px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c69cf3;
+        }
+
+       
+        .loading-message {
+            text-align: center;
+            color: #6F40C8;
+            margin-top: 20px;
+            display: none;
+
+        }
+
+        span{
+            color: #6F40C8;
+            font-size: 1.2em;
+
+        }
+
+        .input-button{
+        display: flex;
+         
+
+        }
+
+       main{
+        
+        font-size: 1.1em;
+        color: #DFE6EC;
+        text-align: center;
+        
+padding: 40px;
+
+       }
+
+       .etapas{
+
+text-align: center;
+
+
+       }
+
+       .etapap{ 
+        font-size: 1.5em;
+     color: #F5F5F5;
+
+
+       }
+
+       .borda{
+        
+        color: #F5F5F5;
+        
+        font-size: 1.3em;
+        text-align: center;
+        margin: 0px;
+padding: 20px;
+       }
+      
+    </style>
+    <!--
+    <script>
+        function showLoadingMessage() {
+             document.getElementById( 'loadingMessage').style.display = 'block';
+        }
+    </script>-->
+<script>
+
+
+    function showLoadingMessage(){
+
+        var submit = document.getElementById('submit').value;
+       
+
+        if(onclick){
+            alert('Clique em "OK" para começar o downloa.');
+           
+            
+        }else{
+            alert('Clique em "OK" para começar o download.');
+        }
+
+    }
+
+</script>
+
+
+
+</head>
+<body>
+    <p class="borda" >Conversor MP3 </p>
+    <div class="container">
+        <p id="h1"><span>Conversor</span> para MP3</p>
+        <p id="paragrafo-abaixo-do-titulo" >Baixe e salve vídeos do YouTube gratuitamente</p>
+        <form action="/download" method="POST" onsubmit="showLoadingMessage()">
+           
+            <div class="input-button">
+                <input  type="text" id="videoUrl" name="videoUrl" placeholder="URL da Música" required>
+                
+                
+                <button id="submit" type="submit">Baixar Música</button>
+            </div>
+        </form>
+    </div>
+<center>
+        <main>
+            <div>
+                <p id="h1" >Como baixar o vídeo do YouTube online?</p>
+                <p  >Você pode baixar facilmente vídeos do YouTube online em 3 etapas:</p>
+                        <div class="etapas">
+                            <br><br><br><br>
+                            <p class="etapap">Etapa 1:</p>
+                            <p id="etapa1">Copie a URL da música que você precisa baixar. </p>
+                        <br>
+                        <p class="etapap">Etapa 2:</p>
+                            <p id="etapa2">Cole a URL no campo Pesquisar e clique no botão <br> "baixar" para iniciar o processo de download.</p>
+                        <br>
+                        </div>
+                  
+            </div>
+    
+    
+    
+        </main>
+</center>
+
+
+
+</body>
+</html>
